@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8445014709176958536}
   m_Layer: 8
   m_Name: Ruby
-  m_TagString: Untagged
+  m_TagString: RubyController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,8 +105,18 @@ MonoBehaviour:
   maxHealth: 5
   projectilePrefab: {fileID: 652729595705260242, guid: 4a90ce890b04a3349a09e456b6b23737, type: 3}
   timeInvincible: 2
+  audioSource: {fileID: 8445014709176958536}
   throwSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
   hitSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
+  healthDecrease: {fileID: 42217075363522418, guid: 188fb5a09643f3742be9a3eeb56ec58b, type: 3}
+  healthIncrease: {fileID: 6746202312669161719, guid: b81a7a78df39b6e4b9521fa342170c29, type: 3}
+  scoreText: {fileID: 0}
+  winText: {fileID: 0}
+  loseText: {fileID: 0}
+  gameOverText: {fileID: 0}
+  winMusic: {fileID: 8300000, guid: fb82daf98ec384440a98ab2fbcdc67c0, type: 3}
+  loseMusic: {fileID: 8300000, guid: 0904fe7be66884947a8557a4123b0fe9, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
 --- !u!50 &8855871059943656786
 Rigidbody2D:
   serializedVersion: 4
@@ -156,7 +166,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!95 &457592484
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -173,7 +183,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &8445014709176958536
 AudioSource:
   m_ObjectHideFlags: 0
